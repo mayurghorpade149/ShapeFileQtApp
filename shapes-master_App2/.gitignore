@@ -1,0 +1,9 @@
+*.pdb
+shapelib/
+glew/
+[Dd]ebug/
+[Rr]elease/
+*.pro.user
+*.dll
+ui_*.h
+Makefile*

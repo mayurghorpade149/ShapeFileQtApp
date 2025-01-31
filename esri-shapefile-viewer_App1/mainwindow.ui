@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>683</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Dataset"/>
+    <addaction name="actionClose_All"/>
+   </widget>
+   <widget class="QMenu" name="menuLayer">
+    <property name="title">
+     <string>Layer</string>
+    </property>
+    <addaction name="actionRemove_Layer"/>
+    <addaction name="actionLayer_Up"/>
+    <addaction name="actionLayer_Down"/>
+   </widget>
+   <widget class="QMenu" name="menuMap">
+    <property name="title">
+     <string>Map</string>
+    </property>
+    <widget class="QMenu" name="menuCreate_Map">
+     <property name="title">
+      <string>Create Map</string>
+     </property>
+     <addaction name="actionFull_Elements"/>
+     <addaction name="actionNo_Grid_Line"/>
+    </widget>
+    <addaction name="menuCreate_Map"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuLayer"/>
+   <addaction name="menuMap"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_Dataset">
+   <property name="text">
+    <string>Open Dataset</string>
+   </property>
+  </action>
+  <action name="actionRemove_Layer">
+   <property name="text">
+    <string>Remove Layer</string>
+   </property>
+  </action>
+  <action name="actionLayer_Up">
+   <property name="text">
+    <string>Layer Up</string>
+   </property>
+  </action>
+  <action name="actionLayer_Down">
+   <property name="text">
+    <string>Layer Down</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="text">
+    <string>Close All</string>
+   </property>
+  </action>
+  <action name="actionFull_Elements">
+   <property name="text">
+    <string>Full Elements</string>
+   </property>
+  </action>
+  <action name="actionNo_Grid_Line">
+   <property name="text">
+    <string>No Grid Line</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
